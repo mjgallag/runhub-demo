@@ -4,5 +4,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "serve": "node src/index.js"
   }
 }
