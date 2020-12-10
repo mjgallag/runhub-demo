@@ -1,13 +1,24 @@
+import { useState, useEffect } from 'react';
+
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [backendMessage, setBackendMessage] = useState();
+
+  useEffect(() => {
+    async function fetchBackendMessage() {
+      setBackendMessage(await (await fetch('/api/message')).json());
+    }
+    fetchBackendMessage();
+  });
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>{backendMessage}</code>
         </p>
         <a
           className="App-link"
