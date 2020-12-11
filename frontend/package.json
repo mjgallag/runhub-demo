@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve --listen 8080 --single build"
+    "serve": "serve --listen \"${PORT}\" --single build"
   },
   "eslintConfig": {
     "extends": [
