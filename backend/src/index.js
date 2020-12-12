@@ -2,7 +2,6 @@ const cors = require('cors');
 const express = require('express');
 
 const app = express();
-const basePath = process.env.RUNHUB_BACKEND_URL ? '' : '/backend';
 const port = process.env.PORT || 4000;
 
 app.use(
@@ -11,7 +10,7 @@ app.use(
   })
 );
 
-app.get(`${basePath}/message`, (req, res) => {
+app.get(`/message`, (req, res) => {
   res.json('Hello World!');
 });
 

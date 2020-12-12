@@ -6,7 +6,7 @@ import './App.css';
 const backendUrl =
   window.RUNHUB_BACKEND_URL !== '__RUNHUB_BACKEND_URL__'
     ? window.RUNHUB_BACKEND_URL
-    : '/backend';
+    : 'http://localhost:4000';
 
 function App() {
   const [backendMessage, setBackendMessage] = useState();
