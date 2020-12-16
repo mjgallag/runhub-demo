@@ -6,7 +6,7 @@ const port = process.env.PORT || 4000;
 
 app.use(
   cors({
-    origin: process.env.RUNHUB_FRONTEND_URL || 'http://localhost:3000',
+    origin: process.env.RUNHUB_SERVICE_FRONTEND_URL || 'http://localhost:3000',
   })
 );
 

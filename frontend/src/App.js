@@ -4,8 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 
 const backendUrl =
-  window.RUNHUB_BACKEND_URL !== '__RUNHUB_BACKEND_URL__'
-    ? window.RUNHUB_BACKEND_URL
+  window.RUNHUB_SERVICE_BACKEND_URL !== '__RUNHUB_SERVICE_BACKEND_URL__'
+    ? window.RUNHUB_SERVICE_BACKEND_URL
     : 'http://localhost:4000';
 
 function App() {
