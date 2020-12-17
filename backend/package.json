@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "nodemon src/index.js",
-    "serve": "node src/index.js"
+    "runhub-serve": "node src/index.js"
   }
 }
