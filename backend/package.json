@@ -2,6 +2,7 @@
   "name": "backend",
   "version": "0.0.0",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -11,8 +12,8 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "start": "nodemon src/index.js",
-    "serve": "node src/index.js"
+    "start": "nodemon ${npm_package_main}",
+    "serve": "node ${npm_package_main}"
   },
   "nodemonConfig": {
     "ignoreRoot": [
