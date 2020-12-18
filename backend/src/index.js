@@ -1,6 +1,8 @@
 const cors = require('cors');
 const express = require('express');
 
+const { message } = require('shared');
+
 const backend = express();
 const port = process.env.PORT || 4000;
 
@@ -11,7 +13,7 @@ backend.use(
 );
 
 backend.get(`/message`, (req, res) => {
-  res.json('Hello World!');
+  res.json(message);
 });
 
 backend.listen(port, () => {

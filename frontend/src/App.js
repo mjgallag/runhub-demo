@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+import { message } from 'shared';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,7 +25,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <code>{backendMessage}</code>
+          <code>{message} ... from frontend</code>
+        </p>
+        <p>
+          <code>{backendMessage} ... from backend</code>
         </p>
         <a
           className="App-link"
