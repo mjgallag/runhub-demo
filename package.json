@@ -1,0 +1,12 @@
+{
+  "name": "runhub-demo",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "postinstall": "lerna exec npm install --parallel",
+    "start": "lerna run start --parallel"
+  }
+}
