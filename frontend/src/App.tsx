@@ -11,7 +11,7 @@ const backendUrl =
     : 'http://localhost:4000';
 
 function App() {
-  const [backendMessage, setBackendMessage] = useState();
+  const [backendMessage, setBackendMessage] = useState('');
 
   useEffect(() => {
     async function fetchBackendMessage() {
