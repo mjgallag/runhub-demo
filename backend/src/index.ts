@@ -1,10 +1,10 @@
-const cors = require('cors');
-const express = require('express');
+import cors from 'cors';
+import express from 'express';
 
-const { message } = require('shared');
+import { message } from 'shared';
 
 const backend = express();
-const port = process.env.PORT || 4000;
+const port = ((process.env.PORT as unknown) as number) || 4000;
 
 backend.use(
   cors({
@@ -12,7 +12,7 @@ backend.use(
   })
 );
 
-backend.get(`/message`, (req, res) => {
+backend.get(`/message`, (_req, res) => {
   res.json(message);
 });
 
