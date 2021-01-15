@@ -12,7 +12,7 @@ backend.use(
   })
 );
 
-backend.get(`/message`, (_req, res) => {
+backend.get('/message', (_req, res) => {
   res.json(message);
 });
 
