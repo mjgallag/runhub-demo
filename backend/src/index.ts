@@ -12,6 +12,11 @@ backend.use(
   })
 );
 
+backend.use((_req, res, next) => {
+  res.set('Cache-Control', 'no-cache');
+  next();
+});
+
 backend.get('/message', (_req, res) => {
   res.json(message);
 });
