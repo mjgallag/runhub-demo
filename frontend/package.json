@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preserve": "sed s,__RUNHUB_SERVICE_BACKEND_URL__,${RUNHUB_SERVICE_BACKEND_URL}, build/index.html > tmpfile && mv tmpfile build/index.html",
+    "preserve": "sed \"s,__RUNHUB_SERVICE_BACKEND_URL__,${RUNHUB_SERVICE_BACKEND_URL}\", build/index.html > tmpfile && mv tmpfile build/index.html",
     "serve": "serve build --listen ${PORT} --single --config ../serve.json"
   },
   "eslintConfig": {
