@@ -21,8 +21,6 @@
     "serve": "node lib/index.js"
   },
   "nodemonConfig": {
-    "ignoreRoot": [
-      ".git"
-    ]
+    "ignoreRoot": []
   }
 }
