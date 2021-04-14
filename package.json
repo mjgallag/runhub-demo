@@ -1,6 +1,5 @@
 {
   "name": "runhub-app-template",
-  "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "lerna": "^4.0.0"
