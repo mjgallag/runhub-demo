@@ -4,8 +4,7 @@
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "shared": "file:../shared"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "@tsconfig/node14": "^1.0.0",
@@ -21,6 +20,9 @@
     "serve": "node lib/index.js"
   },
   "nodemonConfig": {
-    "ignoreRoot": []
+    "watch": [
+      ".",
+      ".."
+    ]
   }
 }

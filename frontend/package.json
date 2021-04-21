@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "serve": "^11.3.2",
-    "shared": "file:../shared"
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.10",

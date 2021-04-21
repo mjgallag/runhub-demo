@@ -5,8 +5,10 @@
   "devDependencies": {
     "lerna": "^4.0.0"
   },
+  "workspaces": [
+    "*"
+  ],
   "scripts": {
-    "postinstall": "lerna exec --parallel -- npm install",
     "start": "lerna exec --parallel -- npm start"
   }
 }
