@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "serve": "^11.3.2"
