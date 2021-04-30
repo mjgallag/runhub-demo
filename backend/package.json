@@ -16,7 +16,7 @@
     "prebuild": "cd .. && npm run build --workspace shared",
     "build": "tsc",
     "start": "nodemon src/index.ts",
-    "serve": "node lib/index.js"
+    "serve": "node dist/index.js"
   },
   "nodemonConfig": {
     "watch": [
