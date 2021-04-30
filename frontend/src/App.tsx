@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { message } from 'shared';
+import { message } from 'message';
 
 import logo from './logo.svg';
 import './App.css';

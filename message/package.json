@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "message",
   "private": true,
   "main": "dist/index.js",
   "devDependencies": {

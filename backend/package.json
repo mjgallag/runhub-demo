@@ -13,7 +13,7 @@
     "ts-node": "^9.1.1"
   },
   "scripts": {
-    "prebuild": "cd .. && npm run build --workspace shared",
+    "prebuild": "cd .. && npm run build --workspace message",
     "build": "tsc --build",
     "start": "nodemon src/index.ts",
     "serve": "node dist/index.js"

@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 
-import { message } from 'shared';
+import { message } from 'message';
 
 const backend = express();
 const port = ((process.env.PORT as unknown) as number) || 4000;
