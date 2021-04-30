@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "cd .. && npm run build --workspace message",
+    "prebuild": "cd ../../.. && npm run build --workspace libraries",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

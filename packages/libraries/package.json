@@ -1,0 +1,8 @@
+{
+  "name": "libraries",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build",
+    "start": "tsc --build --watch"
+  }
+}
