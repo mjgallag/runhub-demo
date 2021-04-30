@@ -14,7 +14,7 @@
   },
   "scripts": {
     "prebuild": "cd .. && npm run build --workspace shared",
-    "build": "tsc",
+    "build": "tsc --build",
     "start": "nodemon src/index.ts",
     "serve": "node dist/index.js"
   },
