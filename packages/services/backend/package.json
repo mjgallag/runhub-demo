@@ -21,7 +21,7 @@
   "nodemonConfig": {
     "watch": [
       ".",
-      ".."
+      "../../libraries"
     ]
   }
 }
