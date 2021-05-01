@@ -1,5 +1,5 @@
 {
-  "name": "libraries",
+  "name": "shared",
   "private": true,
   "scripts": {
     "build": "tsc --build",
