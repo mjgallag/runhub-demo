@@ -1,6 +1,9 @@
 {
   "name": "shared",
   "private": true,
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1"
+  },
   "scripts": {
     "build": "tsc --build",
     "start": "tsc --build --watch"
