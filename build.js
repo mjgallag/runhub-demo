@@ -31,7 +31,6 @@
         await fs.copyFile(file, `${buildDir}/${file}`);
         try {
           const mapFile = `${file}.map`;
-
           await fs.stat(mapFile);
           await fs.copyFile(mapFile, `${buildDir}/${mapFile}`);
         } catch {}
