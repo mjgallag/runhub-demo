@@ -11,6 +11,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
+    "serve": "^11.3.2",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -20,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preserve": "sed \"s,__RUNHUB_SERVICE_BACKEND_URL__,${RUNHUB_SERVICE_BACKEND_URL}\", build/index.html > tmpfile && mv tmpfile build/index.html",
-    "serve": "node serve.js"
+    "serve": "serve build --listen ${PORT} --single --config ../serve.json"
   },
   "eslintConfig": {
     "extends": [
