@@ -13,6 +13,7 @@
   "scripts": {
     "prebuild": "cd ../.. && npm run build --workspace shared",
     "build": "tsc --build",
+    "postbuild": "node ../../build.js dist/index.js",
     "start": "nodemon src/index.ts",
     "serve": "node dist/index.js"
   },
