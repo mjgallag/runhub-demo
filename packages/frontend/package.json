@@ -17,6 +17,7 @@
     "start": "react-scripts start",
     "prebuild": "cd ../.. && npm run build --workspace shared",
     "build": "react-scripts build",
+    "postbuild": "node ../../build.js serve.js && cp -R build ../../build/packages/frontend/packages/frontend",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "preserve": "sed \"s,__RUNHUB_SERVICE_BACKEND_URL__,${RUNHUB_SERVICE_BACKEND_URL}\", build/index.html > tmpfile && mv tmpfile build/index.html",
