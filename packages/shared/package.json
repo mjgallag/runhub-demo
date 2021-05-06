@@ -1,7 +1,7 @@
 {
   "name": "shared",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "@tsconfig/recommended": "^1.0.1"
   },
   "scripts": {
